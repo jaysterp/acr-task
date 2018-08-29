@@ -1,5 +1,5 @@
 version: v1.0.0
 
 steps: 
-    - cmd: "echo" {{.Values.text}}
+    - cmd: bash -c 'echo {{.Values.text}}'
     - cmd: {{.Values.image}}
